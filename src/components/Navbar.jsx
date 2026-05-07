@@ -5,7 +5,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import Image from "next/image";
 function Navbar() {
   return (
-    <div className="z-1">
+    <div className="z-1 px-10">
       <div className="flex justify-between items-center">
         <div className="flex gap-4 justify-center items-center">
           <img
@@ -14,7 +14,7 @@ function Navbar() {
           />
           <h1 className="font-bold text-2xl"><Link href={"/"}>Learnly</Link></h1>
         </div>
-        <ul className="flex gap-7">
+        <ul className="md:flex gap-7 hidden">
           <li>
             <Link href={"/"}>Home</Link>
           </li>
@@ -28,7 +28,7 @@ function Navbar() {
             <Link href={"/"}>About</Link>
           </li>
         </ul>
-        <div className="flex justify-between gap-5 items-center">
+        <div className="lg:flex justify-between gap-5 items-center hidden">
           <div className="relative flex items-center">
             <FaSearch className="text-gray-600 absolute left-3" />
             <input
@@ -38,7 +38,7 @@ function Navbar() {
             />
           </div>
           <MdOutlineShoppingCart className="text-2xl cursor-pointer" />
-          <Image src="/user.png" alt="user" width={40} height={40} className="rounded-3xl cursor-pointer" />
+          <Image src="/user.png" alt="user" width={30} height={30} className="rounded-3xl cursor-pointer" />
         </div>
       </div>
     </div>

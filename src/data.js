@@ -6,7 +6,7 @@ export const courses = [
     price: 49.99,
     rating: 4.7,
     students: "32K",
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    image: "/react.jpg",
     description: "Learn React from scratch and build powerful web applications.",
     lessons: [
       "Introduction",
@@ -23,7 +23,7 @@ export const courses = [
     price: 39.99,
     rating: 4.6,
     students: "27K",
-    image: "https://images.unsplash.com/photo-1526378722484-bd91ca387e72",
+    image: "/js.png",
     description: "Master JavaScript fundamentals and advanced topics.",
     lessons: ["Variables", "Functions", "DOM", "ES6"]
   },
@@ -34,7 +34,7 @@ export const courses = [
     price: 44.99,
     rating: 4.4,
     students: "18K",
-    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+    image: "/ui.png",
     description: "Design modern and user-friendly interfaces.",
     lessons: ["Colors", "Typography", "Wireframes"]
   },
@@ -45,7 +45,7 @@ export const courses = [
     price: 54.99,
     rating: 4.6,
     students: "21K",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    image: "/node.png",
     description: "Build backend applications using Node.js.",
     lessons: ["Setup", "APIs", "Routing"]
   },
@@ -56,7 +56,7 @@ export const courses = [
     price: 34.99,
     rating: 4.5,
     students: "29K",
-    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    image: "/python.jpg",
     description: "Start programming with Python easily.",
     lessons: ["Basics", "Loops", "Functions"]
   },
@@ -67,7 +67,7 @@ export const courses = [
     price: 29.99,
     rating: 4.7,
     students: "15K",
-    image: "https://images.unsplash.com/photo-1587614382346-4ec70e388b28",
+    image: "/figma.jpg",
     description: "Design professional UI using Figma.",
     lessons: ["Layouts", "Components"]
   },
@@ -78,7 +78,7 @@ export const courses = [
     price: 59.99,
     rating: 4.8,
     students: "12K",
-    image: "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86",
+    image: "/next.png",
     description: "Build fullstack apps with Next.js.",
     lessons: ["Routing", "SSR"]
   },
@@ -89,7 +89,7 @@ export const courses = [
     price: 39.99,
     rating: 4.5,
     students: "10K",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    image: "/data.png",
     description: "Analyze data using SQL.",
     lessons: ["Queries", "Joins"]
   },
@@ -100,91 +100,41 @@ export const courses = [
     price: 49.99,
     rating: 4.6,
     students: "17K",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0",
+    image: "/ps.jpg",
     description: "Master Photoshop for design.",
     lessons: ["Tools", "Editing"]
   }
 ];
 
-export const smallCourses = [
-  {
+export const heroCourses = [
+   {
     id: 1,
-    title: "React Basics",
-    description: "Learn React from zero to hero with practical examples.",
-    price: 200,
-    rating: 4.6,
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
-    lessons: [
-      "Intro to React",
-      "Components",
-      "Props & State",
-      "Hooks Basics"
-    ]
+    title: "React - The Complete Guide",
+    instructor: "John Smith",
+    price: 49.99,
+    rating: 4.7,
+    students: "32K",
+    image: "/react.jpg",
+   
   },
   {
     id: 2,
     title: "JavaScript Mastery",
-    description: "Master JavaScript fundamentals and advanced concepts.",
-    price: 150,
-    rating: 4.8,
-    image: "https://images.unsplash.com/photo-1526378722484-bd91ca387e72",
-    lessons: [
-      "Variables & Data Types",
-      "Functions",
-      "DOM Manipulation",
-      "ES6 Features"
-    ]
+    instructor: "Emily Johnson",
+    price: 39.99,
+    rating: 4.6,
+    students: "27K",
+    image: "/js.png",
   },
   {
     id: 3,
-    title: "UI/UX Design Basics",
-    description: "Learn how to design beautiful and user-friendly interfaces.",
-    price: 180,
-    rating: 4.5,
-    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
-    lessons: [
-      "Color Theory",
-      "Typography",
-      "Wireframing",
-      "Figma Basics"
-    ]
+    title: "UI/UX Design Fundamentals",
+    instructor: "David Lee",
+    price: 44.99,
+    rating: 4.4,
+    students: "18K",
+    image: "/ui.png",
   },
-  {
-    id: 4,
-    title: "Next.js Crash Course",
-    description: "Build modern full-stack apps using Next.js.",
-    price: 250,
-    rating: 4.7,
-    image: "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86",
-    lessons: [
-      "Routing",
-      "SSR vs SSG",
-      "API Routes",
-      "Deployment"
-    ]
-  },
-  {
-    id: 5,
-    title: "Python for Beginners",
-    instructor: "Michael Brown",
-    price: 34.99,
-    rating: 4.5,
-    students: "29K",
-    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
-    description: "Start programming with Python easily.",
-    lessons: ["Basics", "Loops", "Functions"]
-  },
-  {
-    id: 6,
-    title: "Figma UI Design",
-    instructor: "Jessica Davis",
-    price: 29.99,
-    rating: 4.7,
-    students: "15K",
-    image: "https://images.unsplash.com/photo-1587614382346-4ec70e388b28",
-    description: "Design professional UI using Figma.",
-    lessons: ["Layouts", "Components"]
-  }
 ];
 
 export const testimonials = [
