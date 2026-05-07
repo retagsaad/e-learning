@@ -106,6 +106,87 @@ export const courses = [
   }
 ];
 
+export const smallCourses = [
+  {
+    id: 1,
+    title: "React Basics",
+    description: "Learn React from zero to hero with practical examples.",
+    price: 200,
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    lessons: [
+      "Intro to React",
+      "Components",
+      "Props & State",
+      "Hooks Basics"
+    ]
+  },
+  {
+    id: 2,
+    title: "JavaScript Mastery",
+    description: "Master JavaScript fundamentals and advanced concepts.",
+    price: 150,
+    rating: 4.8,
+    image: "https://images.unsplash.com/photo-1526378722484-bd91ca387e72",
+    lessons: [
+      "Variables & Data Types",
+      "Functions",
+      "DOM Manipulation",
+      "ES6 Features"
+    ]
+  },
+  {
+    id: 3,
+    title: "UI/UX Design Basics",
+    description: "Learn how to design beautiful and user-friendly interfaces.",
+    price: 180,
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+    lessons: [
+      "Color Theory",
+      "Typography",
+      "Wireframing",
+      "Figma Basics"
+    ]
+  },
+  {
+    id: 4,
+    title: "Next.js Crash Course",
+    description: "Build modern full-stack apps using Next.js.",
+    price: 250,
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86",
+    lessons: [
+      "Routing",
+      "SSR vs SSG",
+      "API Routes",
+      "Deployment"
+    ]
+  },
+  {
+    id: 5,
+    title: "Python for Beginners",
+    instructor: "Michael Brown",
+    price: 34.99,
+    rating: 4.5,
+    students: "29K",
+    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    description: "Start programming with Python easily.",
+    lessons: ["Basics", "Loops", "Functions"]
+  },
+  {
+    id: 6,
+    title: "Figma UI Design",
+    instructor: "Jessica Davis",
+    price: 29.99,
+    rating: 4.7,
+    students: "15K",
+    image: "https://images.unsplash.com/photo-1587614382346-4ec70e388b28",
+    description: "Design professional UI using Figma.",
+    lessons: ["Layouts", "Components"]
+  }
+];
+
 export const testimonials = [
   {
     name: "Sarah Johnson",
