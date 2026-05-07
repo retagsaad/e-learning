@@ -7,14 +7,15 @@ export const courses = [
     rating: 4.7,
     students: "32K",
     image: "/react.jpg",
-    description: "Learn React from scratch and build powerful web applications.",
+    description:
+      "Learn React from scratch and build powerful web applications.",
     lessons: [
       "Introduction",
       "React Basics",
       "Components",
       "State and Props",
-      "Hooks"
-    ]
+      "Hooks",
+    ],
   },
   {
     id: 2,
@@ -25,7 +26,7 @@ export const courses = [
     students: "27K",
     image: "/js.png",
     description: "Master JavaScript fundamentals and advanced topics.",
-    lessons: ["Variables", "Functions", "DOM", "ES6"]
+    lessons: ["Variables", "Functions", "DOM", "ES6"],
   },
   {
     id: 3,
@@ -36,7 +37,7 @@ export const courses = [
     students: "18K",
     image: "/ui.png",
     description: "Design modern and user-friendly interfaces.",
-    lessons: ["Colors", "Typography", "Wireframes"]
+    lessons: ["Colors", "Typography", "Wireframes"],
   },
   {
     id: 4,
@@ -47,7 +48,7 @@ export const courses = [
     students: "21K",
     image: "/node.png",
     description: "Build backend applications using Node.js.",
-    lessons: ["Setup", "APIs", "Routing"]
+    lessons: ["Setup", "APIs", "Routing"],
   },
   {
     id: 5,
@@ -58,7 +59,7 @@ export const courses = [
     students: "29K",
     image: "/python.jpg",
     description: "Start programming with Python easily.",
-    lessons: ["Basics", "Loops", "Functions"]
+    lessons: ["Basics", "Loops", "Functions"],
   },
   {
     id: 6,
@@ -69,7 +70,7 @@ export const courses = [
     students: "15K",
     image: "/figma.jpg",
     description: "Design professional UI using Figma.",
-    lessons: ["Layouts", "Components"]
+    lessons: ["Layouts", "Components"],
   },
   {
     id: 7,
@@ -80,7 +81,7 @@ export const courses = [
     students: "12K",
     image: "/next.png",
     description: "Build fullstack apps with Next.js.",
-    lessons: ["Routing", "SSR"]
+    lessons: ["Routing", "SSR"],
   },
   {
     id: 8,
@@ -91,7 +92,7 @@ export const courses = [
     students: "10K",
     image: "/data.png",
     description: "Analyze data using SQL.",
-    lessons: ["Queries", "Joins"]
+    lessons: ["Queries", "Joins"],
   },
   {
     id: 9,
@@ -102,12 +103,12 @@ export const courses = [
     students: "17K",
     image: "/ps.jpg",
     description: "Master Photoshop for design.",
-    lessons: ["Tools", "Editing"]
-  }
+    lessons: ["Tools", "Editing"],
+  },
 ];
 
 export const heroCourses = [
-   {
+  {
     id: 1,
     title: "React - The Complete Guide",
     instructor: "John Smith",
@@ -115,7 +116,6 @@ export const heroCourses = [
     rating: 4.7,
     students: "32K",
     image: "/react.jpg",
-   
   },
   {
     id: 2,
@@ -139,18 +139,38 @@ export const heroCourses = [
 
 export const testimonials = [
   {
+    id: 1,
     name: "Sarah Johnson",
     role: "UI Designer",
-    review: "This platform helped me improve my skills and land my dream job!"
+    image: "/user1.png",
+    review: "This platform helped me improve my skills and land my dream job!",
   },
+
   {
+    id: 2,
     name: "Michael Brown",
     role: "Frontend Developer",
-    review: "Best learning platform ever. Easy to follow and practical."
+    image: "/user2.png",
+    review: "Best learning platform ever. Easy to follow and practical.",
   },
+
   {
+    id: 3,
     name: "Emily Davis",
     role: "Product Manager",
-    review: "Highly recommend for anyone looking to grow fast."
-  }
+    image: "/user3.png",
+    review: "Highly recommend for anyone looking to grow fast.",
+  },
 ];
+export const footerData = {
+  platform: ["Courses", "Categories", "Instructors", "Pricing"],
+
+  company: ["About Us", "Blog", "Careers", "Contact"],
+
+  support: [
+    "Help Center",
+    "Terms of Service",
+    "Privacy Policy",
+    "Refund Policy",
+  ],
+};
