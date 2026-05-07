@@ -8,11 +8,11 @@ export default function TrustedBy() {
           Trusted by 50.000+ companies worldwide
         </h1>
         <div className="flex gap-20 justify-center">
-          <Image src={"/google.svg"} width={100} height={100} />
-          <Image src={"/Amazon.svg"} width={50} height={50} />
-          <Image src={"/Microsoft.svg"} width={50} height={50} />
-          <Image src={"/Netflix.svg"} width={100} height={100} />
-          <Image src={"/Spotify.svg"} width={50} height={50} />
+          <Image alt="google" src={"/google.svg"} width={100} height={100} />
+          <Image alt="Amazon" src={"/Amazon.svg"} width={50} height={50} />
+          <Image alt="Microsoft" src={"/Microsoft.svg"} width={50} height={50} />
+          <Image alt="Netflix" src={"/Netflix.svg"} width={100} height={100} />
+          <Image alt="Spotify" src={"/Spotify.svg"} width={50} height={50} />
         </div>
       </div>
     </div>
