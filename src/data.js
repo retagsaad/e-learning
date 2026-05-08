@@ -90,7 +90,7 @@ export const courses = [
     price: 39.99,
     rating: 4.5,
     students: "10K",
-    image: "/data.png",
+    image: "/data.jpg",
     description: "Analyze data using SQL.",
     lessons: ["Queries", "Joins"],
   },
