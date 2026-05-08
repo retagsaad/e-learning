@@ -5,6 +5,7 @@ import { FaStar } from "react-icons/fa";
 export default function Testimonials() {
   return (
     <div className="my-10">
+        <h1 className="font-bold text-2xl text-center my-3">What our students say</h1>
       <div className="md:flex md:gap-2 xl:gap-10 justify-center">
         {testimonials.map((testimonial) => (
           <div

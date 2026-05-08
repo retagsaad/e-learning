@@ -162,15 +162,21 @@ export const testimonials = [
     review: "Highly recommend for anyone looking to grow fast.",
   },
 ];
-export const footerData = {
-  platform: ["Courses", "Categories", "Instructors", "Pricing"],
+export const footerData = [
+  {id:1,
+    title: "Platform" ,
+    links: ["Courses", "Categories", "Instructors", "Pricing"]},
 
-  company: ["About Us", "Blog", "Careers", "Contact"],
+  {id:2,
+    title:'Company',
+  links: ["About Us", "Blog", "Careers", "Contact"]},
 
-  support: [
+  {id:3,
+    title:'Support',
+  links: [
     "Help Center",
     "Terms of Service",
     "Privacy Policy",
     "Refund Policy",
-  ],
-};
+  ]},
+];
