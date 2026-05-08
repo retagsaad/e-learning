@@ -6,7 +6,7 @@ export const courses = [
     price: 49.99,
     rating: 4.7,
     students: "32K",
-    image: "/react.jpg",
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1200&auto=format&fit=crop",
     description:
       "Learn React from scratch and build powerful web applications.",
     lessons: [
