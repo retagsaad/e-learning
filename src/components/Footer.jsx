@@ -8,7 +8,7 @@ import { CiTwitter } from "react-icons/ci";
 
 export default function Footer() {
   return (
-    <div className="bg-indigo-600 w-full text-white">
+    <div className="bg-indigo-600  text-white">
       <div className="p-5">
         <div className="md:flex gap-70">
           <div className="md:ml-20">

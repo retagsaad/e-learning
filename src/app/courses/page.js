@@ -6,19 +6,29 @@ import { FaStar } from "react-icons/fa6";
 import Link from "next/link";
 export default function CoursesPage() {
   return (
-    <div>
-      <div className="md:flex gap-30 my-10 md:ml-20">
+    <div className="">
+      <div className="md:flex md:gap-10 lg:gap-25 my-10 md:ml-5 lg:ml-15">
         <div>
           <h1 className="font-bold text-xl">All Courses</h1>
           <p className="text-gray-500">Showing 9 courses</p>
+          <div className="md:flex gap-2 md:mt-5 mt-2">
+            <input
+              type="text"
+              placeholder="Search for courses..."
+              className="p-2 border border-gray-400 rounded-lg mb-3 md:mb-0 md:w-50"
+            />
+            <button className=" p-2 border-none text-white bg-indigo-700 rounded-2xl cursor-pointer">
+              Search
+            </button>
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 justify-center  ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 justify-center sm:gap-5">
           {courses.map((course) => (
             <div
               key={course.id}
-              className="bg-indigo-100  shadow-2xl w-80 rounded-2xl  mt-5 cursor-pointer md:flex"
+              className="bg-indigo-100  shadow-2xl w-80 rounded-2xl  mt-5 cursor-pointer sm:w-50 md:w-60 xl:w-75"
             >
-              <Link href={"/${course.id}"}>
+              <Link href={"/course.id"}>
                 <Image
                   alt="course"
                   src={course.image}
