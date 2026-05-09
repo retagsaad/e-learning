@@ -2,37 +2,46 @@ import { testimonials } from "@/data";
 import React from "react";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
+
 export default function Testimonials() {
   return (
-    <div className="my-10">
-        <h1 className="font-bold text-2xl text-center my-3">What our students say</h1>
-      <div className="md:flex md:gap-2 xl:gap-10 justify-center">
+    <div className="my-12 px-5 md:px-10">
+      <h1 className="font-bold text-2xl text-center mb-8">
+        What our students say
+      </h1>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 justify-center">
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="my-5 bg-indigo-100 p-4 rounded-xl shadow-xl sm:w-85"
+            className="bg-indigo-100 p-5 rounded-xl shadow-md hover:shadow-xl transition"
           >
-            <div className="flex gap-2">
+            <div className="flex gap-3 items-center">
               <Image
                 src={testimonial.image}
-                width={35}
-                height={35}
+                width={40}
+                height={40}
                 alt="user"
-                className="rounded-4xl"
+                className="rounded-full"
               />
-              <div className="">
+
+              <div>
                 <h3 className="font-bold">{testimonial.name}</h3>
-                <p className="text-gray-500">{testimonial.role}</p>
+                <p className="text-gray-500 text-sm">{testimonial.role}</p>
               </div>
             </div>
-            <div className="flex my-4 text-lg">
-              <FaStar className="text-yellow-400" />
-              <FaStar className="text-yellow-400" />
-              <FaStar className="text-yellow-400" />
-              <FaStar className="text-yellow-400" />
-              <FaStar className="text-yellow-400" />
+
+            <div className="flex my-3 text-yellow-400">
+              {Array(5)
+                .fill(0)
+                .map((_, i) => (
+                  <FaStar key={i} />
+                ))}
             </div>
-            <p className="w-75">{testimonial.review}</p>
+
+            <p className="text-gray-700 text-sm leading-6">
+              {testimonial.review}
+            </p>
           </div>
         ))}
       </div>
