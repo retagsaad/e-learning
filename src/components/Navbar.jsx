@@ -40,7 +40,7 @@ function Navbar() {
             <Link href="/courses">Courses</Link>
           </li>
           <li>
-            <Link href="/">Categories</Link>
+            <Link href="/courses">Categories</Link>
           </li>
           <li>
             <Link href="/">About</Link>
