@@ -2,7 +2,7 @@
 
 import Footer from "@/components/Footer";
 import { courses } from "@/data";
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa6";
 import Link from "next/link";

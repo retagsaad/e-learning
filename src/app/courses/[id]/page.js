@@ -1,10 +1,12 @@
-import React from "react";
+"use client";
 import Image from "next/image";
 import { courses } from "@/data";
 import { FaStar } from "react-icons/fa6";
 import Link from "next/link";
-export default async function Course({ params }) {
-  const { id } = await params;
+import React, { use, useState } from "react";
+import Buy from "@/components/Buy";
+export default function Course({ params }) {
+  const { id } = use(params);
   const course = courses.find((course) => course.id == Number(id));
   if (!course) {
     return (
@@ -13,6 +15,7 @@ export default async function Course({ params }) {
       </div>
     );
   }
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="mt-10 max-w-6xl mx-auto px-4">
@@ -52,20 +55,25 @@ export default async function Course({ params }) {
               <div>
                 <h1 className="font-bold text-3xl my-3">${course.price}</h1>
                 <div>
-                  <button className="bg-indigo-600 text-white p-4 rounded-xl w-full cursor-pointer hover:bg-indigo-800">
+                  <button
+                    onClick={() => setOpen(true)}
+                    className="bg-indigo-600 text-white p-4 rounded-xl w-full cursor-pointer hover:bg-indigo-800"
+                  >
                     Buy Now
                   </button>
                 </div>
               </div>
             </div>
           </div>
+          {open && <Buy setOpen={setOpen} course={course} />}
         </div>
         <div className="mt-10 md:mt-20 text-center">
           <div className="flex justify-between items-center mb-5">
             <h1 className="font-bold text-xl ">Course Content</h1>
             <Link
-              href={"/courses"}
+              href={`/courses/${course.id}`}
               className="text-indigo-700 font-medium hover:underline"
+              onClick={() => setOpen(true)}
             >
               Enroll Now
             </Link>
