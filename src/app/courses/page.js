@@ -32,22 +32,21 @@ export default function CoursesPage() {
 
           <div className="md:flex gap-2 md:mt-5 mt-2 relative ">
             <div className="md:flex  gap-2 items-center">
-
-            <input
-              type="text"
-              placeholder="Search for courses..."
-              className="p-2 border border-gray-400 rounded-2xl mb-3 md:mb-0 md:w-50"
-              value={search}
-              onChange={handleInput}
+              <input
+                type="text"
+                placeholder="Search for courses..."
+                className="p-3 border border-gray-400 rounded-xl mb-3 md:mb-0 md:w-50"
+                value={search}
+                onChange={handleInput}
               />
 
-            <button
-              className="p-2 text-white bg-indigo-700 rounded-2xl cursor-pointer"
-              onClick={handleSearch}
+              <button
+                className="p-3 text-white bg-indigo-700 rounded-2xl cursor-pointer"
+                onClick={handleSearch}
               >
-              Search
-            </button>
-              </div>
+                Search
+              </button>
+            </div>
 
             {search.length > 0 && (
               <div className="absolute top-12 bg-white w-full md:w-50 rounded-md shadow-md z-50 max-h-60 overflow-y-auto">

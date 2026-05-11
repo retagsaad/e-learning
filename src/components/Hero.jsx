@@ -31,21 +31,22 @@ export default function Hero() {
           Explore thousands of courses and start your learning journey today.
         </p>
 
-        <div className="relative md:flex gap-2 md:mt-5 mt-3">
-          <input
-            type="text"
-            placeholder="Search for courses..."
-            className="p-2 border border-gray-400 rounded-lg mb-3 md:mb-0 md:w-70 w-full"
-            value={search}
-            onChange={handleInput}
-          />
-
-          <button
-            onClick={handleSearch}
-            className="p-3 text-white bg-indigo-700 rounded-2xl cursor-pointer"
-          >
-            Search
-          </button>
+        <div className="md:flex gap-2 md:mt-5 mt-2 relative ">
+          <div className="md:flex gap-2 items-center">
+            <input
+              type="text"
+              placeholder="Search for courses..."
+              className="p-3 border border-gray-400 rounded-xl mb-3 md:mb-0 md:w-70 "
+              value={search}
+              onChange={handleInput}
+            />
+            <button
+              onClick={handleSearch}
+              className="p-3 text-white bg-indigo-700 rounded-2xl cursor-pointer"
+            >
+              Search
+            </button>
+          </div>
 
           {search.length > 0 && (
             <div className="absolute top-12 left-0 bg-white w-full md:w-70 rounded-md shadow-lg z-50 max-h-60 overflow-y-auto">
