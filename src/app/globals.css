@@ -16,9 +16,10 @@
   :root {
     --background: #faf9fb;
     --foreground: ;
-  }::-webkit-scrollbar {
-  display: none;
-}
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 /* Hide scrollbar */
 

@@ -10,7 +10,12 @@ export default function TrustedBy() {
         <div className="flex gap-20 justify-center">
           <Image alt="google" src={"/google.svg"} width={100} height={100} />
           <Image alt="Amazon" src={"/Amazon.svg"} width={50} height={50} />
-          <Image alt="Microsoft" src={"/Microsoft.svg"} width={50} height={50} />
+          <Image
+            alt="Microsoft"
+            src={"/Microsoft.svg"}
+            width={50}
+            height={50}
+          />
           <Image alt="Netflix" src={"/Netflix.svg"} width={100} height={100} />
           <Image alt="Spotify" src={"/Spotify.svg"} width={50} height={50} />
         </div>
