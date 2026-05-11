@@ -18,7 +18,7 @@ export default function Buy({ course, setOpen }) {
   return (
     <div className="fixed inset-0 bg-black/80 flex justify-center items-center z-50 p-4">
       <div className="bg-white shadow-2xl p-6 rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto">
-        <div className="flex justify-between items-center md:ml-10">
+        <div className="flex justify-between items-center md:ml-5">
           <h1 className="font-bold text-2xl mb-5 mt-0.5">
             Complete your purchase
           </h1>
@@ -29,7 +29,7 @@ export default function Buy({ course, setOpen }) {
             <RiCloseLargeLine />
           </button>
         </div>
-        <div className="md:flex gap-30 md:ml-10">
+        <div className="md:flex gap-15 md:ml-5">
           <div className="leading-15">
             <Image
               src={course.image}

@@ -24,27 +24,30 @@ export default function CoursesPage() {
 
   return (
     <div className="">
-      <div className="md:flex md:gap-10 lg:gap-25 my-10 md:ml-5 lg:ml-15">
+      <div className="md:flex md:gap-10 lg:gap-25 my-10 justify-center ml-7">
         <div>
           <h1 className="font-bold text-xl">All Courses</h1>
 
           <p className="text-gray-500">Showing {courses.length} courses</p>
 
-          <div className="md:flex gap-2 md:mt-5 mt-2 relative">
+          <div className="md:flex gap-2 md:mt-5 mt-2 relative ">
+            <div className="md:flex  gap-2 items-center">
+
             <input
               type="text"
               placeholder="Search for courses..."
-              className="p-2 border border-gray-400 rounded-lg mb-3 md:mb-0 md:w-50 w-full"
+              className="p-2 border border-gray-400 rounded-2xl mb-3 md:mb-0 md:w-50"
               value={search}
               onChange={handleInput}
-            />
+              />
 
             <button
               className="p-2 text-white bg-indigo-700 rounded-2xl cursor-pointer"
               onClick={handleSearch}
-            >
+              >
               Search
             </button>
+              </div>
 
             {search.length > 0 && (
               <div className="absolute top-12 bg-white w-full md:w-50 rounded-md shadow-md z-50 max-h-60 overflow-y-auto">
@@ -73,7 +76,7 @@ export default function CoursesPage() {
           {filterCourses.map((course) => (
             <div
               key={course.id}
-              className="bg-indigo-100 shadow-2xl w-80 rounded-2xl mt-5 cursor-pointer sm:w-50 md:w-60 xl:w-75"
+              className="bg-indigo-100 shadow-2xl w-80 rounded-2xl mt-5 cursor-pointer sm:w-50 md:w-60 xl:w-75 hover:scale-105 transition duration-300"
             >
               <Link href={`/courses/${course.id}`}>
                 <Image
@@ -81,7 +84,7 @@ export default function CoursesPage() {
                   src={course.image}
                   width={600}
                   height={400}
-                  className="w-full h-50 object-cover rounded-t-2xl hover:scale-105 transition"
+                  className="w-full h-50 object-cover rounded-t-2xl"
                 />
 
                 <div className="p-2 mt-2">

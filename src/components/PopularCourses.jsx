@@ -22,7 +22,7 @@ export default function PopularCourses() {
         {heroCourses.map((herocourse) => (
           <div
             key={herocourse.id}
-            className="bg-indigo-100 shadow-lg rounded-2xl overflow-hidden cursor-pointer hover:shadow-xl transition"
+            className="bg-indigo-100 shadow-lg hover:scale-105 transition duration-300 rounded-2xl overflow-hidden cursor-pointer hover:shadow-xl "
           >
             <Link href={`/courses/${herocourse.id}`}>
               <Image
@@ -30,7 +30,7 @@ export default function PopularCourses() {
                 src={herocourse.image}
                 width={600}
                 height={400}
-                className="w-full h-48 object-cover hover:scale-105 transition duration-300"
+                className="w-full h-48 object-cover "
               />
 
               <div className="p-3">
